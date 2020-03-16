@@ -97,7 +97,7 @@ a.link:hover{ /*when hover over a link (class is called "link")*/
 /* For Mobile or Small Screens */
 
 
-@media only screen and (max-width: 736px){
+@media screen and (max-width: 736px){
 
     #rect{
         background-color:white;
