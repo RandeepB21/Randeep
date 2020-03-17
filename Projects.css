@@ -328,90 +328,235 @@
         #wrapper{
                    
             display: grid;
-            grid-template-columns: 0.5fr 300px 400px 400px 0.5fr;
-            grid-template-rows: 90px 1600px 1600px 50px;
+            grid-template-columns:  165px 200px;
+            grid-template-rows: 70px 1100px 1000px 40px;
             grid-template-areas: 
-            ". name nav-tab nav-tab ."
-            ". main main main ."
-            ". main main main ."
-            ". footer footer footer .";
-            margin-top: 120px;
+            "name name"
+            "main main "
+            "main main "
+            "footer footer ";
+            margin-top: 50px;
         }
+
         #nav-name{
-          
-           
-            font-size: 20px;
+            grid-area: name;
+            
+            background-color: transparent;
+
+            font-weight: 50;
+            font-family: Helvetica;
+            font-size: 15px;
            
             padding-left: 0%;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
+            color: black;
+            text-align: center;
+            margin-left: 0px;
+          
            
          }
 
+        #nav-tab{
+            grid-area: name;
+            background-color: transparent;
+            padding: 20px;
 
+        }
+        
+        #nav-button-list{
+            background-color: transparent;
+            margin-right: 0%;
+         
+         }
+         
+
+
+         
          #nav-button-list li{
             padding-top: 1px;
-            padding-left: 10px;
-            padding-right: 10px; 
+            padding-left: 4px;
+            padding-right: 4px; 
           
+        }
+        .nav-button-image{
+            width: 15px;
+            height: 15px;
+            border: 2px solid black;
         }
 
 
+
         .nav-button-font{
-            font-size: 18px;
+            font-size: 12px;
             font-weight: 50;
             font-family: Arial;
             
         }
+
         #main{
             grid-area: main;
-            background-color: white;
-            border: 1px solid gray;
-            margin-top: 40px;
+            margin-top: 30px;
 
-            display: grid;
-            grid-template-columns: 300px 700px;
-            grid-template-rows: 500px 500px 500px 500px 500px 500px;
+            grid-template-columns: 300px;
+            grid-template-rows: 350px 350px 350px 350px 350px 350px;
 
             grid-template-areas: 
-            "box1 box2"
-            "box3 box4"
-            "box5 box6"
-            "box7 box8"
-            "box9 box10"
-            "box11 box12";
-
-            padding: 50px;
+            "box1"
+            "box3"
+            "box5"
+            "box7"
+            "box9"
+            "box11";
+            background-color: transparent;
+            padding: 0px;
 
         }
 
-
         .project-name{
             text-align: center;
-            padding: 40px;
-            background-color: white;
+            padding: 0px 0px 0px 0px;
+           
+            background-color: transparent;
 
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 300;
             font-family: Arial;
             color: black;
-            margin-top: 40px;
-            margin-right: 9px;
-            margin-left: 9px;
+           
+        
+            margin-left: 60px;
             border: 1px solid lightgray;
 
 
         }
 
+     
         .project-description{
             font-family: Arial;
             font-weight: 50;
-            font-size: 10px;
-            padding: 0px;
-            padding-right: 0px;
-            margin-left: 5px;
+            font-size: 12px;
+            background-color: transparent;
+            
+            
          
         }
 
+        #box1{
+            grid-area: box1;
+            background-color: transparent;
+       
+          
+        }
 
+        #box2{
+            grid-area: box1;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+           
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+
+
+        #box3{
+            grid-area: box3;
+            background-color: transparent;
+           
+            
+        }
+
+        #box4{
+            grid-area: box3;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+           
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+
+        #box5{
+            grid-area: box5;
+            background-color: transparent;
+           
+            
+        }
+
+        #box6{
+            grid-area: box5;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+            
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+
+        #box7{
+            grid-area: box7;
+            background-color: transparent;
+           
+           
+        }
+
+        #box8{
+            grid-area: box7;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+           
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+
+        #box9{
+            grid-area: box9;
+            background-color: transparent;
+           
+        }
+
+        #box10{
+            grid-area: box9;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+            
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+
+        #box11{
+            grid-area: box11;
+            background-color: transparent;
+           
+            
+        }
+
+        #box12{
+            grid-area: box11;
+            background-color: transparent;
+            border-bottom: 0px solid transparent;
+            
+            margin-left: 20px;
+            padding-top: 30px;
+            
+        }
+
+
+        #footer{
+            font-size: 15px;
+            font-weight: 50;
+            font-family: Arial;
+        }
+
+
+        #footer{
+            grid-area: footer;
+            background-color: gray;
+
+       
+            font-weight: 50;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        
 
     }
