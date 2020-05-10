@@ -286,7 +286,7 @@
     #wrapper{
         display: grid;
         grid-template-columns:  165px 200px;
-        grid-template-rows: 70px 1400px 1000px 40px;
+        grid-template-rows: 70px 1200px 1400px 40px;
         grid-template-areas: 
         "name name"
         "main main "
