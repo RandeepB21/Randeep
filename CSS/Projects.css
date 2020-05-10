@@ -1,0 +1,486 @@
+/* Start For top of Page */
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 300px 400px 400px 1fr;
+    grid-template-rows: 50px 1100px 1100px 50px;
+    grid-template-areas: 
+    ". name nav-tab nav-tab ."
+    ". main main main ."
+    ". main main main ."
+    ". footer footer footer .";
+    margin-top: 120px;
+}
+
+#nav-name{
+    grid-area: name;
+
+    background-color: white;
+
+    font-weight: 50;
+    font-family: Helvetica;
+    font-size: 40px;
+    border-bottom: 1px solid lightgray;
+    padding-left: 12%;
+    padding-bottom: 40px;
+    color: black;
+}
+                
+#nav-name:link{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-name:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-name:hover{
+    color:rgb(216,216,216);
+    transition-duration: 0.3s;
+}
+
+#nav-tab{
+    grid-area: nav-tab;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+                
+                                              
+                
+.nav-button-image{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}
+.nav-button-image:hover{
+    border: 2px solid rgb(216,216,216);
+    transition-duration: 0.3s;
+}
+
+#nav-button-list{
+    list-style-type: none;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+}
+
+#nav-button-list li{
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+#nav-button-list a:link{
+    color: black;
+    text-decoration: none;
+}
+                
+#nav-button-list a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-button-list a:hover{
+    color:rgb(216,216,216);
+    transition-duration: 0.3s; 
+}
+
+.nav-button-font{
+    font-size: 18px;
+    font-weight: 50;
+    font-family: Arial;
+}              
+/* End For top of Page */
+                
+                
+                
+                
+/* Start For body of page */
+#main{
+    grid-area: main;
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box4"
+    "box5 box6"
+    "box7 box8"
+    "box9 box10"
+    "box11 box12";
+
+    padding: 50px;
+}
+                
+#box1{
+    grid-area: box1;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box2{
+    grid-area: box2;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+
+#box3{
+    grid-area: box3;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box4{
+    grid-area: box4;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box5{
+    grid-area: box5;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box6{
+    grid-area: box6;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box7{
+    grid-area: box7;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+                
+#box8{
+    grid-area: box8;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box9{
+    grid-area: box9;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box10{
+    grid-area: box10;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box11{
+    grid-area: box11;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+#box12{
+    grid-area: box12;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+                
+                
+.project-name{
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Arial;
+    color: black;
+    margin-top: 40px;
+    margin-right: 9px;
+    margin-left: 9px;
+    border: 1px solid lightgray;
+}
+
+.project-name:hover{
+    background-color: lightgray;
+    transition-duration: 0.5s;
+}
+
+.project-description{
+    font-family: Arial;
+    font-weight: 50;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    text-align: left;
+}
+/* End For Body of Page */
+                
+                
+                             
+                
+ /* Start For footer of page */
+#footer{
+    font-size: 20px;
+    font-weight: 50;
+    font-family: Arial;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: 50;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+/* End For footer of Page */
+
+
+
+
+
+/* Start For observer animations */
+
+.name-animation{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.name-animation.appear{
+    opacity: 1;
+}
+
+.description-animation{
+    color: transparent;   
+}
+
+.description-animation{
+    transition: color 800ms ease-in, transform 800ms ease-in ;
+}
+
+
+.description-animation.appear{
+    color: black;
+}
+/* end For observer animations */
+
+
+
+
+
+
+
+/* For Mobile or Small Screens */
+@media screen and (max-width: 736px){
+    #wrapper{
+        display: grid;
+        grid-template-columns:  165px 200px;
+        grid-template-rows: 70px 1100px 1000px 40px;
+        grid-template-areas: 
+        "name name"
+        "main main "
+        "main main "
+        "footer footer ";
+        margin-top: 50px;
+    }
+
+    #nav-name{
+        grid-area: name;
+        background-color: transparent;
+        font-weight: 50;
+        font-family: Helvetica;
+        font-size: 15px;
+        padding-left: 0%;
+        padding-bottom: 0px;
+        color: black;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #nav-tab{
+        grid-area: name;
+        background-color: transparent;
+        padding: 20px;
+    }
+    
+    #nav-button-list{
+        background-color: transparent;
+        margin-right: 0%;
+    }
+        
+    #nav-button-list li{
+        padding-top: 1px;
+        padding-left: 4px;
+        padding-right: 4px; 
+    }
+    .nav-button-image{
+        width: 15px;
+        height: 15px;
+        border: 2px solid black;
+    }
+
+    .nav-button-font{
+        font-size: 12px;
+        font-weight: 50;
+        font-family: Arial;
+    }
+
+    #main{
+        grid-area: main;
+        margin-top: 30px;
+
+        grid-template-columns: 300px;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+
+        grid-template-areas: 
+        "box1"
+        "box3"
+        "box5"
+        "box7"
+        "box9"
+        "box11";
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .project-name{
+        text-align: center;
+        padding: 0px 1px 0px 1px;
+        
+        background-color: transparent;
+
+        font-size: 12px;
+        font-weight: 300;
+        font-family: Arial;
+        color: black;
+        
+    
+        margin-left: 60px;
+        border: 1px solid lightgray;
+    }
+
+     
+    .project-description{
+        font-family: Arial;
+        font-weight: 50;
+        font-size: 12px;
+        background-color: transparent;
+        padding: 0px;
+        padding-right: 0px;
+        margin-left: 20px;
+    }
+
+    #box1{
+        grid-area: box1;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box2{
+        grid-area: box1;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+
+    #box3{
+        grid-area: box3;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box4{
+        grid-area: box3;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+    #box5{
+        grid-area: box5;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box6{
+        grid-area: box5;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+    #box7{
+        grid-area: box7;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box8{
+        grid-area: box7;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+    #box9{
+        grid-area: box9;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box10{
+        grid-area: box9;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+    #box11{
+        grid-area: box11;
+        background-color: transparent;
+        width: 365px;
+    }
+
+    #box12{
+        grid-area: box11;
+        background-color: transparent;
+        border-bottom: 0px solid transparent;
+        margin-left: 60px;
+        padding-top: 60px;
+    }
+
+
+    #footer{
+        font-size: 15px;
+        font-weight: 50;
+        font-family: Arial;
+    }
+
+
+    #footer{
+        grid-area: footer;
+        background-color: gray;
+        font-weight: 50;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+}
