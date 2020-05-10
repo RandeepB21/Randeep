@@ -238,7 +238,7 @@
     #wrapper{      
         display: grid;
         grid-template-columns:  165px 200px;
-        grid-template-rows: 70px 675px 625px 40px;
+        grid-template-rows: 70px 675px 600px 40px;
         grid-template-areas: 
         "name name"
         "main main "
@@ -300,7 +300,7 @@
 
         display: grid;
         grid-template-columns: 300px 700px;
-        grid-template-rows: 400px 400px 350px;
+        grid-template-rows: 400px 400px 325px;
 
         grid-template-areas: 
         "box1"
